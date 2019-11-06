@@ -52,3 +52,15 @@ while (i < 7){
 };
 document.getElementById("outPut2").innerHTML = text;
 };
+
+function checkCookies(){
+    var text = " ";
+    if (navigator.cookieEnabled == true){
+        text ="Cookies are Enabled";
+    }
+    else {
+        text ="Cookies are not Enabled"
+    
+    }
+    window.open("Cheking").innerHTML = text;
+}
