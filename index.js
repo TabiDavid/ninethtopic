@@ -53,14 +53,15 @@ while (i < 7){
 document.getElementById("outPut2").innerHTML = text;
 };
 
-function checkCookies(){
-    var text = " ";
-    if (navigator.cookieEnabled == true){
-        text ="Cookies are Enabled";
-    }
-    else {
-        text ="Cookies are not Enabled"
-    
-    }
-    window.open("Cheking").innerHTML = text;
+
+var People =[
+    "David Tabi", "Javier Peralta", "Jesus Vargas", "Claudia Martinez"
+];
+
+var random1 = Math.floor(Math.random()*People.length);
+
+var winner = People[random1];
+
+function lockyWinner(){
+    document.getElementById("outPut3").innerHTML = (winner);
 }
