@@ -65,3 +65,54 @@ var winner = People[random1];
 function lockyWinner(){
     document.getElementById("outPut3").innerHTML = (winner);
 }
+
+
+window.addEventListener('load', function(){
+ 
+    var box1 = document.getElementById('box1')
+    var statusdiv = document.getElementById('statusdiv')
+    var startx = 0
+    var dist = 0
+
+box1.addEventListener('touchstart', function(e){
+    var touchobj = e.changedTouches[0] 
+    startx = parseInt(touchobj.clientX) 
+    statusdiv.innerHTML = 'Status: touchstart<br> ClientX: ' + startx + 'px'
+    e.preventDefault()
+}, false)
+
+box1.addEventListener('touchmove', function(e){
+    var touchobj = e.changedTouches[0] 
+    var dist = parseInt(touchobj.clientX) - startx
+    statusdiv.innerHTML = 'Status: touchmove<br> Horizontal distance traveled: ' + dist + 'px'
+    e.preventDefault()
+}, false)
+
+box1.addEventListener('touchend', function(e){
+    var touchobj = e.changedTouches[0] 
+    statusdiv.innerHTML = 'Status: touchend<br> Resting x coordinate: ' + touchobj.clientX + 'px'
+    e.preventDefault()
+}, false)
+
+}, false)
+
+
+var rect = function (){
+
+    document.getElementById("rectangule1").style.animationName = "rectangule";
+    document.getElementById("rectangule1").style.animationDuration = "4s";
+    document.getElementById("rectangule1").style.animationIterationCount = "1";
+    document.getElementById("rectangule1").style.animationFillMode = "forwards";
+    
+    }
+
+
+
+function PressHere(el){
+    if(el.className == "class1"){
+        el.className = "class2";
+    }
+    else{
+        el.className = "class1"
+    }
+}

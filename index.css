@@ -1,0 +1,50 @@
+h1{
+    background-color: rgb(8, 211, 184); 
+}
+p{
+    
+    background-color: rgb(8, 211, 184);
+}
+
+body {
+  background: #009BC4;
+  
+  }
+  .box {
+    background: rgb(236, 147, 147);
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+
+
+  .class1{
+
+    float: right; margin: 50px; background: rgb(83, 103, 212); width: 60px; height: 60px; transition: 5s;
+    
+    }
+    
+    .class2{
+    float: right; margin: 50px; background: rgb(231, 179, 66); width: 40px; height: 40px; transform-origin: 5s;;
+    
+    }   
+
+
+
+    .rectangule {
+        background: rgb(175, 48, 48);
+        width: 200px;
+        height: 200px;
+        position: relative;
+        
+      }
+      
+      
+      
+      @keyframes rectangule {
+        0% {background-color: white; border-radius: 0 0 0 0;}
+        25% {background-color: red;  border-radius: 50% 0 0 0;}
+        50% {background-color: green; border-radius: 50% 50% 0 0}
+        75% {background-color: blue;  border-radius: 50% 50% 50% 0;}
+        100% {background-color: white; border-radius: 50% 50% 50% 50%;}
+      }
