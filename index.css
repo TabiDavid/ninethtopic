@@ -20,12 +20,12 @@ body {
 
   .class1{
 
-    float: right; margin: 50px; background: rgb(83, 103, 212); width: 60px; height: 60px; transition: 5s;
+    float: left; margin: 50px; background: rgb(83, 103, 212); width: 120px; height: 120px; transition: 5s;
     
     }
     
     .class2{
-    float: right; margin: 50px; background: rgb(231, 179, 66); width: 40px; height: 40px; transform-origin: 5s;;
+    float: left; margin: 50px; background: rgb(231, 179, 66); width: 40px; height: 40px; transform-origin: 5s;;
     
     }   
 
